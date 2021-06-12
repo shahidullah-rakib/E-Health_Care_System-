@@ -1,0 +1,45 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?6f30f91152be92dddecb011272945984") format("truetype"),
+url("./flaticon.woff?6f30f91152be92dddecb011272945984") format("woff"),
+url("./flaticon.woff2?6f30f91152be92dddecb011272945984") format("woff2"),
+url("./flaticon.eot?6f30f91152be92dddecb011272945984#iefix") format("embedded-opentype"),
+url("./flaticon.svg?6f30f91152be92dddecb011272945984#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "review": "\f101",
+    "healthcare": "\f102",
+    "doctor": "\f103",
+    "health-insurance": "\f104",
+    "information-desk": "\f105",
+);
+
+.flaticon-review:before {
+    content: map-get($flaticon-map, "review");
+}
+.flaticon-healthcare:before {
+    content: map-get($flaticon-map, "healthcare");
+}
+.flaticon-doctor:before {
+    content: map-get($flaticon-map, "doctor");
+}
+.flaticon-health-insurance:before {
+    content: map-get($flaticon-map, "health-insurance");
+}
+.flaticon-information-desk:before {
+    content: map-get($flaticon-map, "information-desk");
+}

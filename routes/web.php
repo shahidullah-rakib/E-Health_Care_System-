@@ -28,3 +28,4 @@ Route::post('update','PatientController@updatePatient');
 Route::get('/PatientDeletePage','PatientController@PatientControllerDeleteIndex');
 Route::post('delete','PatientController@deletePatient');
 Route::get('/ChangePasswordPage','PatientController@PatientChangePasswordIndex');
+Route::get('/searchDoctor','PatientController@PatientSearchDoctorIndex');

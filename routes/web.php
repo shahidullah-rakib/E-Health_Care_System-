@@ -17,4 +17,14 @@ use Illuminate\Support\Facades\Route;
     return view('welcome');
 });*/
 //Route::get('/dashboard','homeController@index');
-Route::get('/','homeController@index');
+//Route::get('/','homeController@index');
+
+//Patient routes
+
+Route::get('/PatientSignup','PatientController@PatientControllerIndex');
+Route::post('submit','PatientController@insertPatient');
+Route::get('/PatientUpdatePage','PatientController@PatientControllerUpdateIndex');
+Route::post('update','PatientController@updatePatient');
+Route::get('/PatientDeletePage','PatientController@PatientControllerDeleteIndex');
+Route::post('delete','PatientController@deletePatient');
+Route::get('/ChangePasswordPage','PatientController@PatientChangePasswordIndex');

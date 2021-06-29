@@ -1,0 +1,81 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?b459caadd74088ba1b338ad383c55043") format("truetype"),
+url("./flaticon.woff?b459caadd74088ba1b338ad383c55043") format("woff"),
+url("./flaticon.woff2?b459caadd74088ba1b338ad383c55043") format("woff2"),
+url("./flaticon.eot?b459caadd74088ba1b338ad383c55043#iefix") format("embedded-opentype"),
+url("./flaticon.svg?b459caadd74088ba1b338ad383c55043#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "review": "\f101",
+    "healthcare": "\f102",
+    "doctor": "\f103",
+    "health-insurance": "\f104",
+    "information-desk": "\f105",
+    "surgery": "\f106",
+    "loupe": "\f107",
+    "view": "\f108",
+    "visibility": "\f109",
+    "padlock": "\f10a",
+    "logout": "\f10b",
+    "user": "\f10c",
+    "benefit": "\f10d",
+    "worker": "\f10e",
+);
+
+.flaticon-review:before {
+    content: map-get($flaticon-map, "review");
+}
+.flaticon-healthcare:before {
+    content: map-get($flaticon-map, "healthcare");
+}
+.flaticon-doctor:before {
+    content: map-get($flaticon-map, "doctor");
+}
+.flaticon-health-insurance:before {
+    content: map-get($flaticon-map, "health-insurance");
+}
+.flaticon-information-desk:before {
+    content: map-get($flaticon-map, "information-desk");
+}
+.flaticon-surgery:before {
+    content: map-get($flaticon-map, "surgery");
+}
+.flaticon-loupe:before {
+    content: map-get($flaticon-map, "loupe");
+}
+.flaticon-view:before {
+    content: map-get($flaticon-map, "view");
+}
+.flaticon-visibility:before {
+    content: map-get($flaticon-map, "visibility");
+}
+.flaticon-padlock:before {
+    content: map-get($flaticon-map, "padlock");
+}
+.flaticon-logout:before {
+    content: map-get($flaticon-map, "logout");
+}
+.flaticon-user:before {
+    content: map-get($flaticon-map, "user");
+}
+.flaticon-benefit:before {
+    content: map-get($flaticon-map, "benefit");
+}
+.flaticon-worker:before {
+    content: map-get($flaticon-map, "worker");
+}

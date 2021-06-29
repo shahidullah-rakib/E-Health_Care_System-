@@ -1,0 +1,393 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  background: #f6f6f6;
+  font-family: "B612", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  background: #006669;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  font-size: 1.08em;
+  cursor: pointer;
+}
+
+.btn-update {
+  padding: 0.5rem 1rem;
+  background: #ffbc04;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  font-size: 1.08em;
+  cursor: pointer;
+}
+.btn-cart {
+  padding: 0.5rem 1rem;
+  background: #ff7300;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  font-size: 1.08em;
+  cursor: pointer;
+}
+.btn-delete {
+  padding: 0.5rem 1rem;
+  background: #ec0303;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  font-size: 1.08em;
+  cursor: pointer;
+}
+.btn-cart:hover {
+  background: #ff4800;
+  transition: 0.5s;
+}
+
+.btn-update:hover {
+  background: #ff7b00;
+  transition: 0.5s;
+}
+.btn-delete:hover {
+  background: #ad0303;
+  transition: 0.5s;
+}
+
+.btn-big {
+  padding: 0.7rem 1.3rem;
+  line-height: 1.3rem;
+}
+
+.btn-update:hover,
+.btn-delete:hover {
+  text-decoration: none;
+}
+
+.btn:hover {
+  color: white !important;
+  background: #005255;
+}
+
+.text-input {
+  padding: 0.7rem 1rem;
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #e0e0e0;
+  outline: none;
+  color: #444;
+  line-height: 1.5rem;
+  font-size: 1.2em;
+  font-family: "Lora", serif;
+}
+
+.selectbox {
+  padding: 0.7rem 1rem;
+  display: inline-block;
+  width: 57%;
+  border-radius: 5px;
+  border: 1px solid #e0e0e0;
+  outline: none;
+  color: #444;
+  line-height: 1.5rem;
+  font-size: 1.2em;
+}
+
+.msg {
+  width: 100%;
+  margin: 5px auto;
+  padding: 8px;
+  border-radius: 5px;
+  list-style: none;
+}
+
+.success {
+  color: #3a6e3a;
+  border: 1px solid #3a6e3a;
+  background: #bcf5bc;
+}
+
+.error {
+  color: #884b4b;
+  border: 1px solid #884b4b;
+  background: #f5bcbc;
+}
+
+/* AUTH PAGES */
+
+header {
+  background: #01474a;
+}
+
+.admin-wrapper {
+  display: flex;
+  height: calc(100% - 66px);
+}
+
+.admin-wrapper .left-sidebar {
+  flex: 2;
+  height: 100%;
+  background: #234a57;
+}
+.admin-wrapper1 {
+  display: flex;
+}
+.admin-wrapper1 .right-sidebar {
+  flex: 3;
+  padding-top: 100px;
+}
+.admin-wrapper1 .right-sidebar .total-side {
+  border: 1px solid black;
+  display: inline-block;
+  padding: 20px;
+}
+
+.admin-wrapper .left-sidebar ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  color: aliceblue;
+}
+
+.admin-wrapper .left-sidebar ul li a {
+  padding: 18px;
+  display: block;
+  border-bottom: 1px solid #004044;
+}
+
+.admin-wrapper .left-sidebar ul li a:hover {
+  background: #004044;
+}
+
+.admin-wrapper .admin-content {
+  flex: 10;
+  height: 100%;
+  padding: 40px 100px 100px;
+  overflow-y: scroll;
+}
+.admin-wrapper1 .admin-content {
+  flex: 9;
+  height: 100%;
+  padding: 40px 100px 100px;
+}
+.admin-wrapper .admin-content .button-group {
+  display: inline-block;
+}
+.admin-wrapper .admin-content .filter-group {
+  display: inline-block;
+  margin-top: 33px;
+}
+.admin-wrapper .admin-content .select-group {
+  /* display: inline-block;
+  width: 40%; */
+  display: flex;
+}
+.select1 {
+  width: 40%;
+}
+.select2 {
+  width: 40%;
+  margin-left: 218px;
+}
+.admin-wrapper .admin-content .search-bar {
+  float: right;
+  margin-top: -17px;
+}
+.search-input {
+  padding: 0.7rem 1rem;
+  border-radius: 5px;
+  border: 1px solid #e0e0e0;
+  outline: none;
+  color: #444;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.admin-content .page-title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1.1rem;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+/* .edit {
+  color: green;
+}
+
+.delete {
+  color: red;
+} */
+
+/* .publish {
+  color: blue;
+} */
+
+/* .edit:hover,
+.delete:hover,
+.publish:hover {
+  text-decoration: underline;
+} */
+
+form div {
+  margin-bottom: 15px;
+}
+
+.error1 {
+  color: red;
+}
+
+td.no-record {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+}
+th.th-action {
+  text-align: center;
+}
+.status-1 {
+  color: green;
+  font-weight: 700;
+}
+.status-2 {
+  color: red;
+  font-weight: 700;
+}
+.textarea {
+  resize: none;
+  border-radius: 5px;
+  border: 1px solid #8b7f7f;
+  outline: none;
+  color: #444;
+}
+.reasontext {
+  display: block;
+  width: 100%;
+  resize: none;
+}
+.disabled-link {
+  pointer-events: none;
+  background: grey;
+}
+.approve-link {
+  pointer-events: none;
+  background: grey;
+  cursor: no-drop;
+}
+.decline-link {
+  pointer-events: none;
+  background: grey;
+  cursor: no-drop;
+}
+.row {
+  width: 60%;
+  margin: auto;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  display: flex;
+  flex: 10;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 40px;
+}
+
+.profile-card {
+  background-color: #ffffff;
+  width: 190px;
+  height: 268px;
+  margin: 20px 10px 10px 10px;
+}
+@media (max-width: 468px) {
+  .profile-card {
+    width: 290px;
+    height: 250px;
+  }
+}
+.profile-content {
+  padding: 15px;
+}
+/* img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+} */
+.profile-image {
+  text-align: center;
+}
+.desc {
+  text-align: center;
+}
+.desc h2 {
+  color: rgb(12, 172, 150);
+  font-size: 20px;
+}
+.desc p {
+  font-size: 13px;
+  line-height: 1.3em;
+  margin-top: -10px;
+  color: red;
+  font-weight: 700;
+}
+.btn-div {
+  text-align: center;
+}
+.badge {
+  padding: 0 5px;
+  margin-left: 2px;
+  background: black;
+  border-radius: 5px;
+}
+.quan {
+  border-radius: 7px;
+  outline: none;
+  padding: 5px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+}
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+.form-control.successjs input {
+  border-color: #2ecc71;
+}
+
+.form-control.errorjs input {
+  border-color: #e74c3c;
+}
+.form-control small {
+  color: #e74c3c;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.form-control.errorjs small {
+  visibility: visible;
+}

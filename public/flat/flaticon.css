@@ -1,0 +1,62 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("./flaticon.ttf?b459caadd74088ba1b338ad383c55043") format("truetype"),
+url("./flaticon.woff?b459caadd74088ba1b338ad383c55043") format("woff"),
+url("./flaticon.woff2?b459caadd74088ba1b338ad383c55043") format("woff2"),
+url("./flaticon.eot?b459caadd74088ba1b338ad383c55043#iefix") format("embedded-opentype"),
+url("./flaticon.svg?b459caadd74088ba1b338ad383c55043#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-review:before {
+    content: "\f101";
+}
+.flaticon-healthcare:before {
+    content: "\f102";
+}
+.flaticon-doctor:before {
+    content: "\f103";
+}
+.flaticon-health-insurance:before {
+    content: "\f104";
+}
+.flaticon-information-desk:before {
+    content: "\f105";
+}
+.flaticon-surgery:before {
+    content: "\f106";
+}
+.flaticon-loupe:before {
+    content: "\f107";
+}
+.flaticon-view:before {
+    content: "\f108";
+}
+.flaticon-visibility:before {
+    content: "\f109";
+}
+.flaticon-padlock:before {
+    content: "\f10a";
+}
+.flaticon-logout:before {
+    content: "\f10b";
+}
+.flaticon-user:before {
+    content: "\f10c";
+}
+.flaticon-benefit:before {
+    content: "\f10d";
+}
+.flaticon-worker:before {
+    content: "\f10e";
+}

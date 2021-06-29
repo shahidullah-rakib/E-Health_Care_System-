@@ -27,6 +27,14 @@ class PatientController extends Controller
      public function PatientChangePasswordIndex(){
       return view('Patient.PatientChangePassword');
    }
+   
+   
+   public function PatientSearchDoctorIndex(){
+      return view('Patient.searchDoctor');
+   }
+   
+   
+   
 
 
      //public function validation(patientRegistrationRequest $req){

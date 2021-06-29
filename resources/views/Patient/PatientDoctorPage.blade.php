@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 
-     <title>Patient Signup page </title>
+     <title>Doctor page (View from patient) </title>
 <!--
 
 Template 2098 Health
@@ -45,7 +45,7 @@ http://www.tooplate.com/view/2098-health
                <div class="row">
 
                     <div class="col-md-4 col-sm-5">
-                         <p>This is Patient Signup page</p>
+                         <p>Doctor Page(Patient)</p>
                     </div>
                          
                     <div class="col-md-8 col-sm-7 text-align-right">
@@ -77,11 +77,10 @@ http://www.tooplate.com/view/2098-health
                <!-- MENU LINKS -->
                <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
-                         <li><a href="#top" class="smoothScroll">Home</a></li>
-                         <li><a href="#about" class="smoothScroll">About Us</a></li>
-                         <li><a href= "#news" class="smoothScroll">News</a></li>
-                         <li><a href="#google-map" class="smoothScroll">Contact</a></li>
-                         <li class="appointment-btn"><a href="/PatientDoctor">Doctors</a></li>
+                         <li class="DoctorInfo-btn"><a href="/PatientDoctorInfo"> See doctor Info</a></li>
+                         <li class="DoctorSchedule-btn"><a href=" "> See Doctor Schedule</a></li>
+                         <li class="DoctorReview-btn"><a href="/PatientDoctorReview"> Review Doctor</a></li>
+                         <li class="DoctorContact-btn"><a href="/PatientDoctorContact "> Contact Doctor</a></li>
                     </ul>
                </div>
 
@@ -91,8 +90,8 @@ http://www.tooplate.com/view/2098-health
 
 
 
-     <!-- Register section -->
-     <section id="appointment" data-stellar-background-ratio="3">
+ <!-- Make Appoinment section -->
+ <section id="appointment" data-stellar-background-ratio="3">
           <div class="container">
               
                          <!-- Register form -->
@@ -100,61 +99,43 @@ http://www.tooplate.com/view/2098-health
 
                               <!-- Register section title -->
                               <div class="section-title wow fadeInUp" data-wow-delay="0.4s">
-                                   <h2>Patient Registration</h2>
+                                   <h2>Fill appoinment form</h2>
                               </div>
 
                               <div class="wow fadeInUp" data-wow-delay="0.8s">
-                                   <div class="col-md-6 col-sm-6">
+                                   <div class="row-md-4 row-sm-4">
                                         <label for="name">Name</label>
                                         <input type="text" class="form-control" id="name" name="name" placeholder="Full Name">
                                    </div>
+
+                                     
 								   
-								   
-								    <div class="col-md-6 col-sm-6">
-                                        <label for="select">Select Gender </label>
+								    <div class="row-md-4 row-sm-4">
+                                        <label for="select">Select Problem type </label>
                                         <select class="form-control">
-                                             <option>Male</option>
-                                             <option>Female</option>
+                                             <option>Eye</option>
+                                             <option>Ear</option>
+                                             <option>Skin</option>
                 
                                         </select>
                                    </div>
-								   
-								   
-								<div class="col-md-6 col-sm-6">
-                                        <label for="name">Age</label>
-                                        <input type="text" class="form-control" id="name" name="name" placeholder="Age">
-                                   </div>
-								   
-								   
-								   
-								   
 
-                                   <div class="col-md-6 col-sm-6">
-                                        <label for="email">Email</label>
-                                        <input type="email" class="form-control" id="email" name="email" placeholder="Your Email">
-                                   </div>
-
-                                   <div class="col-md-6 col-sm-6">
-                                        <label for="date">Select Date</label>
-                                        <input type="date" name="date" value="" class="form-control">
-                                   </div>
-
-                                   <div class="col-md-6 col-sm-6">
-                                        <label for="telephone">Phone Number</label>
-                                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone">
-									
+								   
+							<div class="row-md-4 row-sm-4">
+                                      <label for="name">Duration of Problem</label>
+                                      <input type="text" class="form-control" id="name" name="name" placeholder="Since how much time yoy are facing problem">
+                                   </div>   
+							
+                                   <div class="row-md-4 row-sm-4">
+                                   <label for="Message">Details</label>
+                                    <textarea class="form-control" rows="3" id="message" name="message" placeholder="Message"></textarea>		
                                    </div>
 								   
 								   
-								   <div class="col-md-4 col-sm-4">
+							<div class="col-md-5 col-sm-5">
 								   
-                                        <button type="submit" class="form-control" id="cf-submit" name="submit">Sign up</button>
+                                        <button type="submit" class="form-control" id="cf-submit" name="submit">Create appoinment</button>
                                    </div>
-
-                                   <div class="col-md-4 col-sm-4">
-								   
-                                           <button type="submit" class="form-control" id="cf-submit" name="submit">Edit Info</button>
-                                      </div>
 								   
 								   
                               </div>
@@ -164,6 +145,11 @@ http://www.tooplate.com/view/2098-health
                </div>
           </div>
      </section>
+
+
+
+
+
 
        
 

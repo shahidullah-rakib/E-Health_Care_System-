@@ -84,7 +84,6 @@ Route::group( ['middleware' => ['sess']], function () {
         Route::post( '/admin/updateSalary/{id}', "UserControllerByAdmin@updateSalaryVerify" )->name( 'user.updateSalaryVerify' );
     } );
 
-
     //patient route
     Route::get( '/PatientSignup', ['uses' => 'PatientProfileController@PatientSignUpIndex'] );
     Route::get( '/PatientDoctor', ['uses' => 'PatientProfileController@PatientDoctorPageIndex'] );

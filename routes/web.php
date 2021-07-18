@@ -100,13 +100,19 @@ Route::get("/roomBookView",'RoomController@roomBookView')->name('room.roomBookVi
 Route::get('/viewDetails',"UserControllerByAdmin@viewUserDetails")->name('user.viewUserDetails');
 
 //patient route
-Route::get('/PatientSignup', ['uses'=> 'PatientProfileController@PatientSignUpIndex']);
-Route::get('/PatientDoctor', ['uses'=> 'PatientProfileController@PatientDoctorPageIndex']);
-Route::get('/PatientDoctorInfo', ['uses'=> 'PatientProfileController@PatientDoctorInfoIndex']);
-Route::get('/PatientDoctorContact', ['uses'=> 'PatientProfileController@PatientDoctorContactIndex']);
-Route::get('/PatientDoctorReview', ['uses'=> 'PatientProfileController@PatientDoctorReviewIndex']);
-
-
-//Route::get('/doctorDashboard', [DoctorController::class,'doctorDashboard']);
-
-//Route::get('/doctor/approveAppointment',[DoctorController::class,'approveAppointment'])->name('doctorPage');
+Route::get('/PatientHome','PatientController@PatientHomeIndex');
+Route::get('/PatientSignup','PatientController@PatientControllerIndex');
+Route::post('submit','PatientController@insertPatient');
+Route::get('/PatientUpdatePage','PatientController@PatientControllerUpdateIndex');
+Route::post('update','PatientController@updatePatient');
+Route::get('/ViewDoctorInfoPage','PatientController@ViewDoctorInfoIndex');
+Route::get('/searchDoctor','PatientController@PatientSearchDoctorIndex');
+Route::get('/PatientAppoinment','PatientAppoinmentController@MakeAppoinmentIndex');
+Route::post('/submitAppoinment','PatientAppoinmentController@addAppoinment');
+Route::view('/ContactDoctorPatient','Patient.chatdoctor')->middleware('ContactDoc');
+Route::get('/CheckRoomView','PatientRoomController@ViewRoomIndex');
+Route::get('/PatientDoctorReview','PatientDoctorReviewController@PatientDoctorReviewIndex');
+Route::post('/submitPatientDoctorReview','PatientDoctorReviewController@SubmitPatientDoctorReviewIndex');
+Route::get('/PatientClinicReview','PatientClinicReviewController@PatientClinicReviewIndex');
+Route::post('/submitPatientClinicReview','PatientClinicReviewController@SubmitPatientClinicReviewIndex');
+Route::get('/PatientLogout','PatientController@PatientLogoutIndex');

@@ -3,6 +3,18 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+body {
+  background-color: green;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+h1 {
+  font-size: 50px;
+}
+</style>
+
+<style>
 body {font-family: Arial, Helvetica, sans-serif;}
 * {box-sizing: border-box;}
 

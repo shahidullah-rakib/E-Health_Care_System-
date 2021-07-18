@@ -1,5 +1,5 @@
 <html>
-<h1> Doctor Review Page</h1>
+<h1> Patient Appoinment Page</h1>
 
 <body>
 
@@ -17,17 +17,22 @@ h1 {
 
 
 
-<form action='/submitPatientDoctorReview' method="POST">
+<form action='/submitAppoinment' method="POST">
 <table>
+		<tr>
+			<td>Enter Patient id</td>
+			<td><input type="text" name="patientid"></td>
+		</tr>
+
 		
 		<tr>
-			<td>Doctor name</td>
-			<td><input type="text" name="name"></td>
+			<td>Enter Doctor id</td>
+			<td><input type="text" name="doctorid"></td>
 		</tr>
 
 		<tr>
-			<td>Review doctor</td>
-			<td><input type="text" name="message"></td>
+			<td>Describe your problems</td>
+			<td><input type="text" name="patientdisease"></td>
 		</tr>
 
         <tr>

@@ -1,5 +1,5 @@
 <html>
-<h1> Doctor Review Page</h1>
+<h1> Clinic Review Page</h1>
 
 <body>
 
@@ -17,16 +17,16 @@ h1 {
 
 
 
-<form action='/submitPatientDoctorReview' method="POST">
+<form action='/submitPatientClinicReview' method="POST">
 <table>
 		
 		<tr>
-			<td>Doctor name</td>
-			<td><input type="text" name="name"></td>
+			<td>Patient id</td>
+			<td><input type="text" name="patientid"></td>
 		</tr>
 
 		<tr>
-			<td>Review doctor</td>
+			<td>message</td>
 			<td><input type="text" name="message"></td>
 		</tr>
 
